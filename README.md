@@ -1,6 +1,11 @@
 # Job-Market Radar
+<<<<<<< HEAD
 *The skills that the market asks of Data and Software Engineers (Python focused)*
 
+=======
+**The skills that the market asks of Data and Software Engineers (Python focused)**
+---
+>>>>>>> 1f97088 (Up to date with the remote repo.)
 
 ## Data Sources and Ethics
 
@@ -25,4 +30,8 @@ The findings from `robots.txt` are not, by themselves, treated as authorization 
 
 **License and intended use**
 
+<<<<<<< HEAD
 This is an open-source project released under the MIT License, intended for educational, analytical, and portfolio-demonstration purposes. The project license applies to its own code; it does not grant rights to third-party job listings, website content, or other source data. Any reuse or redistribution of collected data remains subject to the relevant rights and platform policies.
+=======
+This is an open-source project released under the MIT License, intended for educational, analytical, and portfolio-demonstration purposes. The project license applies to its own code; it does not grant rights to third-party job listings, website content, or other source data. Any reuse or redistribution of collected data remains subject to the relevant rights and platform policies.
+>>>>>>> 1f97088 (Up to date with the remote repo.)
