@@ -1,6 +1,14 @@
 ---
 
 services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    command: [ "sleep", "infinity" ]
   db:
     image: postgres:18
     restart: always
@@ -9,10 +17,11 @@ services:
       - 5432:5432
     volumes:
       - DB:/var/lib/postgresql
+      - ./docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
     env_file:
       - ./.env
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_NAME}" ]
+      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}" ]
       interval: 10s
       timeout: 10s
       retries: 5

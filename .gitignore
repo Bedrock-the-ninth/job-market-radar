@@ -223,8 +223,4 @@ __marimo__/
 raw/
 data/
 .readme-template.md
-<<<<<<< HEAD
 test*.py
-=======
-test*.py
->>>>>>> 1f97088 (Up to date with the remote repo.)
